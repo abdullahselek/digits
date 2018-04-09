@@ -2,3 +2,4 @@ future
 tensorflow
 numpy
 scipy
+matplotlib

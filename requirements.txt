@@ -1,0 +1,4 @@
+future
+tensorflow
+numpy
+scipy

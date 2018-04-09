@@ -12,3 +12,5 @@ __version__      = '0.1'
 __url__          = 'https://github.com/abdullahselek/digits'
 __download_url__ = 'https://github.com/abdullahselek/digits'
 __description__  = 'An automated Machine Learning tool used in recognition of hand-written digits.'
+
+from digits import data_handler

@@ -15,4 +15,4 @@ class DataHandlerTest(unittest.TestCase):
 
     def test_random_img_datas(self):
         datas = data_handler.random_img_datas(self.training_data)
-        self.assertEqual(len(list(datas)), 100)
+        self.assertEqual(len(datas), 100)

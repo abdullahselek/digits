@@ -15,4 +15,4 @@ def random_img_datas(mat_dict):
     X = mat_dict['X']
     m = len(X)
     rnd_indices = [randint(0, m) for _ in range(0, 100)]
-    return map(X.__getitem__, rnd_indices)
+    return list(map(X.__getitem__, rnd_indices))

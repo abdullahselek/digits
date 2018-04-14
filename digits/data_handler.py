@@ -31,5 +31,4 @@ def display_data(data_list):
         img_data = np.reshape(data_list[i], (20, 20))
         _ = grid[i].imshow(img_data, interpolation="nearest")
 
-    plt.draw()
     plt.show()

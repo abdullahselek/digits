@@ -22,13 +22,13 @@ def random_img_datas(mat_dict):
     return list(map(X.__getitem__, rnd_indices))
 
 def display_data(data_list):
-    fig = plt.figure(1, (20, 20))
+    fig = plt.figure(num=None, figsize=(20, 20), dpi=80)
     grid = ImageGrid(fig,
                      141,
                      nrows_ncols=(10, 10))
 
     for i in range(100):
-        img_data = np.reshape(data_list[i], (40, 10))
+        img_data = np.reshape(data_list[i], (20, 20))
         _ = grid[i].imshow(img_data, interpolation="nearest")
 
     plt.draw()

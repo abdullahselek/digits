@@ -18,7 +18,7 @@ def load_mat(data_dir, mat_file):
 def random_img_datas(mat_dict):
     X = mat_dict['X']
     m = np.size(X, axis=0)
-    rnd_indices = [randint(0, m) for _ in range(0, 100)]
+    rnd_indices = [randint(0, m-1) for _ in range(0, 100)]
     return list(map(X.__getitem__, rnd_indices))
 
 def display_data(data_list):

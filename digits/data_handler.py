@@ -22,6 +22,12 @@ def random_img_datas(mat_dict):
     return list(map(X.__getitem__, rnd_indices))
 
 def display_data(data_list):
+    """Display 2D data in a nice grid.
+    Args:
+      data_list (array): Data contains image traning sets.
+    Returns:
+      fig (figure): matplotlib figure.
+    """
     fig = plt.figure(num=None, figsize=(20, 20), dpi=80)
     grid = ImageGrid(fig,
                      141,
@@ -32,3 +38,4 @@ def display_data(data_list):
         _ = grid[i].imshow(img_data, interpolation="nearest")
 
     plt.show()
+    return fig

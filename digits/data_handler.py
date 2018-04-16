@@ -5,6 +5,8 @@ from __future__ import division
 import os
 import scipy.io as sio
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import math
 

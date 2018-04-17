@@ -12,7 +12,7 @@ logistic_regr = LogisticRegression()
 
 def train_model():
     training_data = data_handler.load_mat('digits/training-set', 'handwritten-digits.mat')
-    logistic_regr.fit(training_data['X'], training_data['y'])
+    logistic_regr.fit(training_data['X'], np.ravel(training_data['y']))
     return training_data
 
 def predict(X):

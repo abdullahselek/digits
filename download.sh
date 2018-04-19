@@ -26,6 +26,6 @@ echo "Downloading from $URL"
 curl "$URL" --output t10k-labels-idx1-ubyte.gz
 echo "t10k-labels-idx1-ubyte.gz downloaded"
 
-# unzip all zippd files
+# unzip all zipped files
 gzip -d *.gz
 rm -rf *.gz

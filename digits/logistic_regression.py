@@ -16,4 +16,4 @@ def train_model():
     return training_data
 
 def predict(X):
-    return logistic_regr.predict(np.reshape(X, (-1, 400)))
+    return logistic_regr.predict(np.reshape(X, (1, -1)))

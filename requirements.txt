@@ -1,6 +1,0 @@
-future
-tensorflow
-numpy
-scipy
-matplotlib
-scikit-learn
